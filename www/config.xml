@@ -1,0 +1,153 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.skilladda.app" version="1.0.0">
+  <name>NAR Mobile App</name>
+  <description>NAR Mobile App</description>
+  <author href="http://axinovate.com" email="info@axinovate.com">Gautam Choudhury</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+ <!-- <preference name="phonegap-version" value="cli-5.2.0" />		-->
+  <preference name="orientation" value="default"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="7"/>
+  <preference name="android-installLocation" value="auto"/>
+  <!--gap:plugin name="org.apache.cordova.battery-status"/-->
+  <gap:plugin name="org.apache.cordova.battery-status"/>
+  <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.media-capture"/>
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.contacts"/>
+  <gap:plugin name="org.apache.cordova.device"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="com.phonegap.plugins.pushplugin" />
+  <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
+  <!-- gap:plugin name="org.apache.cordova.contacts"/>
+  <gap:plugin name="org.apache.cordova.device"/>
+  <gap:plugin name="org.apache.cordova.device-motion"/>
+  <gap:plugin name="org.apache.cordova.device-orientation"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
+  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file-transfer"/>
+  <gap:plugin name="org.apache.cordova.geolocation"/>
+  <gap:plugin name="org.apache.cordova.globalization"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.media"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.vibration"/-->
+  <icon src="icon.png" />
+
+  <icon src="www/res/icon/android/android-icon-36x36.png" gap:platform="android" gap:qualifier="ldpi"/>
+  <icon src="www/res/icon/android/android-icon-48x48.png" gap:platform="android" gap:qualifier="mdpi"/>
+  <icon src="www/res/icon/android/android-icon-72x72" gap:platform="android" gap:qualifier="hdpi"/>
+  <icon src="www/res/icon/android/android-icon-96x96.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <icon src="www/res/icon/android/android-icon-144x144.png" gap:platform="android" gap:qualifier="xxhdpi"/>
+  <icon src="www/res/icon/android/android-icon-192x192.png" gap:platform="android" gap:qualifier="xxxhdpi"/>
+  <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
+  <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
+  
+  
+  <platform name="ios">
+              <!-- iOS 8.0+ -->
+              <!-- iPhone 6 Plus  -->
+              <icon src="res/icon/ios/icon-57.png"  width="57" height="57" />
+              <icon src="res/icon/ios/icon-60@3x.png" width="180" height="180" />
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <icon src="res/icon/ios/icon-60.png" width="60" height="60" />
+              <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" />
+              <!-- iPad -->
+              <icon src="res/icon/ios/icon-76.png" width="76" height="76" />
+              <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
+              <!-- iOS 6.1 -->
+              <!-- Spotlight Icon -->
+              <icon src="res/icon/ios/icon-40.png" width="40" height="40" />
+              <icon src="res/icon/ios/icon-40@2x.png" width="80" height="80" />
+              <!-- iPhone / iPod Touch -->
+              <icon src="res/icon/ios/icon.png" width="57" height="57" />
+              <icon src="res/icon/ios/icon@2x.png" width="114" height="114" />
+              <!-- iPad -->
+              <icon src="res/icon/ios/Icon-72.png" width="72" height="72" />
+              <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" />
+              <!-- iPhone Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-small.png" width="29" height="29" />
+              <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58" />
+              <!-- iPad Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-50.png" width="50" height="50" />
+              <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" />
+     </platform>
+
+      <splash src="res/screen/ios/Default.png" />
+ <!-- iPhone and iPod touch -->
+<splash src="res/screen/ios/Default.png" platform="ios" width="320" height="480" />
+<splash src="res/screen/ios/Default@2x.png" platform="ios" width="640" height="960" />
+
+<!-- iPhone 5 / iPod Touch (5th Generation) -->
+<splash src="res/screen/ios/Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+<!-- iPhone 6 -->
+<splash src="res/screen/ios/Default-667h@2x.png" platform="ios" width="750" height="1334" />
+<splash src="res/screen/ios/Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+<splash src="res/screen/ios/Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+
+<!-- iPad -->
+<splash src="res/screen/ios/Default-Portrait.png" platform="ios" width="768" height="1024" />
+<splash src="res/screen/ios/Default-Landscape.png" platform="ios" width="1024" height="768" />
+
+<!-- Retina iPad -->
+<splash src="res/screen/ios/Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
+<splash src="res/screen/ios/Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+
+<splash src="res/screen/ios/ldpi.png" platform="android" qualifier="ldpi" />
+<splash src="res/screen/ios/mdpi.png" platform="android" qualifier="mdpi" />
+<splash src="res/screen/ios/hdpi.png" platform="android" qualifier="hdpi" />
+<splash src="res/screen/ios/xhdpi.png" platform="android" qualifier="xhdpi" />
+<splash src="fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" />
+<splash src="portrait-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
+<splash src="res/screen/ios/landscape-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />
+
+<!--<splash src="splash/winphone/splash.jpg" platform="winphone" />
+  
+  <icon src="www/res/icon/webos/icon-64.png" gap:platform="webos"/>
+  <icon src="www/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
+  <icon src="www/res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/> -->
+ 
+   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+    </gap:config-file>
+   
+  <access origin="*"/>
+  <access origin="whatsapp:*" launch-external="yes" />
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>	
+ <platform name="winphone" >
+ <icon src="res/icon/webos/icon-60.png" gap:platform="webos"/>
+  <icon src="res/icon/windows-phone/Icon-48.png" gap:platform="winphone"/>
+  <icon src="res/icon/windows-phone/Icon-62.png" gap:platform="winphone" gap:role="background"/>
+  <icon src="res/icon/windows-phone/Icon-173.png" gap:platform="winphone" gap:role="background"/>
+		<!--
+		<gap:splash src="www/res/screen/windows-phone/splashscreen.jpg" gap:platform="winphone"/>
+		<icon src="res/icon/windows-phone/icon-48.png" platform="winphone" />
+		<icon src="res/icon/windows-phone/widetile.png" platform="winphone" role="background" />-->
+		<splash src="res/icon/windows-phone/Icon-48.png" platform="winphone" />
+  </platform>  
+</widget>
